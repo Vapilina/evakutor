@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Эвакуатор в Москве</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -28,9 +29,36 @@
     }
 
     header h1 {
-      font-size: 2.0rem;
-      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
       max-width: 800px;
+      color: #fff;
+      animation: gradientShift 6s ease infinite, pulseScale 4s ease-in-out infinite;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes pulseScale {
+      0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+      }
+      50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(255, 255, 100, 1);
+      }
     }
 
     section {
@@ -160,7 +188,7 @@
       }
 
       header h1 {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
       }
 
       section {
@@ -175,8 +203,7 @@
   </style>
 </head>
 <body>
-
-  <header>
+<header>
     <h1>Круглосуточный эвакуатор в Москве — быстро, надёжно, недорого</h1>
   </header>
 
@@ -200,7 +227,6 @@
         <p>Техника в порядке, перевозим любой транспорт.</p>
       </div>
     </div>
-
     <div class="contacts-wrapper">
       <div class="contacts-image">
         <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_667dc713f570660c6e2f299f_667dc9cd7c19fa63df27d9c0/scale_1200" alt="Эвакуатор">
@@ -223,8 +249,9 @@
   </section>
 
   <footer>
-    &copy; 2025 Эвакуатор Москва — Ваша надёжная помощь на дороге
+    &copy; 2025 Эвакуатор Москва — надёжная помощь на дороге
   </footer>
+  </section>
 
 </body>
 </html>
